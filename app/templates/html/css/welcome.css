@@ -1,0 +1,128 @@
+body {
+    --color-green: #44AA95;
+    --color-green-secundary : #B2D8D0;
+    --color-red: #ed1c24;
+    --color-red-secundary: #bc0210;
+    --color-grey: #f2f2f2;
+    --color-grey-secundary: #cccccc;
+    --color-yellow: #ffa800;
+    --color-yellow-secundary: #e89503;
+    --color-dark: black;
+    --border-radius: 50px;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: var(--color-green-secundary);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.title{
+    display: inline-flex;
+    text-align: center;
+    align-self: center;
+}
+
+.braga{
+    margin-right: 5px;
+    color: var(--color-dark);
+    text-align: center;
+}
+
+.home{
+    margin-left: 5px;
+    color: var(--color-dark);
+    text-align: center;
+}
+
+h3 {
+    color: grey
+}
+
+
+.container {
+    align-self: center;
+    text-align: center;
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    background: var(--color-grey);
+    box-shadow: 20px 20px 50px 10px #297364;
+}
+
+.decoration {
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 0 0 0 1000px;
+    background: rgb(154,228,213);
+    background: radial-gradient(circle, rgba(154,228,213,1) 0%, rgba(91,186,167,1) 100%);
+    box-shadow: 20px 20px 50px 10px #297364;
+    z-index: -1;
+    transform: scale(1.5) rotate(90deg) translateX(0px) translateY(-200px);
+    /*clip: rect(0px,0px,0px,0px);*/
+}
+
+.button-criarConta{
+    width: 100%;
+    padding: 1rem 2em;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-yellow);
+}
+
+.button-criarConta:hover{
+    background: var(--color-yellow-secundary);
+}
+
+.button-criarConta:active{
+    transform: scale(0.98);
+}
+
+.button-login{
+    width: 100%;
+    padding: 1rem 2em;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-red);
+}
+
+.button-login:hover{
+    background: var(--color-red-secundary);
+}
+
+.button-login:active{
+    transform: scale(0.98);
+}
+
+.form--hidden{
+    display: none;
+}
+
+img {
+    /* transform: scale(0.2);   */
+    height: 20px;
+     width: 20px;
+    transform: translateY(45px); 
+}

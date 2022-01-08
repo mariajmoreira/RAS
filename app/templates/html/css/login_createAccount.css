@@ -1,0 +1,220 @@
+body {
+    --color-green: #44AA95;
+    --color-green-secundary : #B2D8D0;
+    --color-red: #ed1c24;
+    --color-red-secundary: #bc0210;
+    --color-grey: #f2f2f2;
+    --color-grey-secundary: #cccccc;
+    --color-yellow: #ffa800;
+    --color-yellow-secundary: #e89503;
+    --border-radius: 50px;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;     
+    background-size: cover;
+    background: var(--color-green-secundary)
+}
+
+
+
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    border-radius: var(--border-radius);
+    background: #f2f2f2;
+    box-shadow: 20px 20px 50px 10px #297364;
+}
+
+.container,
+.form__input,
+.form__button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.form--hidden{
+    display: none;
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+
+.form > *:last-child{
+    margin-bottom: 0;
+}
+
+.form__title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success{
+    color: var(--color-red-secundary);
+}
+
+.form__message--error{
+    color: var(--color-red-secundary);
+}
+
+.form__input-group{
+    margin-bottom: 1rem;
+}
+
+.form__input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing:  border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #dddddd;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus{
+    border-color: var(--color-grey-secundary);
+    background: white;
+}
+
+.form__input--error{
+    color: var(--color-red);
+    border-color: var(--color-red);
+}
+
+.form__input-error-message{
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-red);
+}
+
+.form__button-login{
+    width: 100%;
+    padding: 1rem 2em;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-red);
+}
+
+.form__button-login:hover{
+    background: var(--color-red-secundary);
+}
+
+.form__button-login:active{
+    transform: scale(0.98);
+}
+
+.form__button-createAccount{
+    width: 100%;
+    padding: 1rem 2em;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-yellow);
+}
+
+.form__button-createAccount:hover{
+    background: var(--color-yellow-secundary);
+}
+
+.form__button-createAccount:active{
+    transform: scale(0.98);
+}
+
+.form__text{
+    text-align: center;
+}
+
+.form__link{
+    color: rgb(22, 22, 109);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form__link:hover{
+    text-decoration: underline;
+}
+
+
+
+.button-criarConta{
+    width: 100%;
+    padding: 1rem 2em;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-yellow);
+}
+
+.button-criarContat:hover{
+    background: var(--color-yellow-secundary);
+}
+
+.button-criarConta:active{
+    transform: scale(0.98);
+}
+
+.button-login{
+    width: 100%;
+    padding: 1rem 2em;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-red);
+}
+
+.button-login:hover{
+    background: var(--color-red-secundary);
+}
+
+.button-login:active{
+    transform: scale(0.98);
+}
+
+
+.decoration {
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 0 0 0 1000px;
+    background: rgb(154,228,213);
+    background: radial-gradient(circle, rgba(154,228,213,1) 0%, rgba(91,186,167,1) 100%);
+    box-shadow: 20px 20px 50px 10px #297364;
+    z-index: -1;
+    transform: scale(1.5) rotate(90deg) translateX(0px) translateY(-200px);
+    /*clip: rect(0px,0px,0px,0px);*/
+}
